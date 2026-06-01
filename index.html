@@ -20,7 +20,7 @@
   </head>
   <body>
     <header
-      class="flex justify-between items-center px-5 md:px-[200px] py-[18px] md:py-6 bg-[#412567]"
+      class="flex justify-between items-center px-5 md:px-[200px] py-[18px] md:py-6 bg-[#1A0B2E]"
     >
       <div>
         <h2 class="text-[18px] md:text-[30px] font-bold text-white">
@@ -29,14 +29,15 @@
             >Wave</span
           >
         </h2>
-        
       </div>
-      <div class="hidden md:flex justify-between text-[18px] font-medium text-white">
+      <div
+        class="hidden md:flex justify-between text-[18px] font-medium text-white"
+      >
         <p class="mr-8">About</p>
         <p class="mr-8">Episodes</p>
         <p>Hosts</p>
       </div>
-      
+
       <div>
         <button
           class="hidden md:flex justify-center items-center w-[135px] h-[44px] rounded-4xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"
@@ -46,8 +47,48 @@
         </button>
       </div>
       <div class="md:hidden">
-        <img src="./assets/hamburger-menu.png" alt="">
+        <img src="./assets/hamburger-menu.png" alt="" />
       </div>
     </header>
+
+    <section
+      class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center h-[760px] flex flex-col justify-center items-center"
+    >
+      <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+          <img
+            src="./assets/hero-circle.png"
+            class="h-[350px] w-[350px]"
+            alt=""
+          />
+          <img src="./assets/microphone.png" class="absolute" alt="" />
+        </div>
+        <div>
+          <h2 class="font-extrabold text-[80px] text-white mt-40">TechWave</h2>
+        </div>
+        <p class="text-[16px] text-[#ffffff] mb-6">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+        <div class="grid grid-cols-2 gap-[8px]">
+          <button
+            class="flex justify-center items-center w-[201px] h-[44px] rounded-4xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"
+          >
+            <img src="./assets/line-md_spotify.png" alt="" />
+            <p class="ml-1 text-[16px] font-semibold text-white">
+              Listen on Spotify
+            </p>
+          </button>
+          <button
+            class="flex justify-center items-center border-2 border-[#00FF88] w-[147px] h-[44px] rounded-4xl"
+          >
+            <img src="./assets/message.png" alt="" />
+            <p class="ml-2 text-[16px] font-semibold text-[#00FF88]">
+              Subscribe
+            </p>
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
