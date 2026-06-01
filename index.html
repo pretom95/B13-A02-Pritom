@@ -16,6 +16,21 @@
       * {
         font-family: "Inter", sans-serif;
       }
+
+      .grid-container {
+          display: none;
+          grid-template-columns: 400px 400px 400px; 
+          grid-template-rows: 261px 261px 261px; 
+          gap: 30px;
+          width: 1200px;
+          height: 783px;
+      }
+
+      @media (min-width: 768px) {
+        .grid-container{
+          display: grid;
+        }
+      }
     </style>
   </head>
   <body>
@@ -135,6 +150,70 @@
         <div>
           <p class="text-[48px] text-[#00FF88] font-black mb-[16px]">50+</p>
           <p class="text-[16px] text-white">Industry Experts</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center bg-[#230E3D] py-10 md:py-[120px] px-5 md:px-[200px] ">
+      <div>
+        <h2 class="text-[32px] md:text-[48px] font-bold text-white mb-4 md:mb-10">
+          Why Choose TechWave
+        </h2>
+      </div>
+
+       <div class="mobile grid grid-cols-1 gap-4 md:hidden">
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl p-6">
+          <img src="./assets/headphone.png" class="w-[50px] h-[50px]" alt="">
+          <h4 class="text-[22px] font-bold text-white my-4">Premium Audio Quality</h4>
+          <p class="text-[16px] text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl p-6 col-span-2 ">
+          <img src="./assets/device.png" class="w-[40px] h-[55px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Mobile Friendly</h4>
+          <p class="text-[16px] text-white">Listen on the go with seamless mobile experience and offline downloads..</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl p-6 col-span-2 ">
+          <img src="./assets/location.png" class="w-[60px] h-[60px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Global Community</h4>
+          <p class="text-[16px] text-white">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl p-6 col-span-2">
+          <img src="./assets/zap-fast.png" class="w-[60px] h-[60px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Exclusive Interviews</h4>
+          <p class="text-[16px] text-white">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl p-6">
+          <img src="./assets/resource.png" class="w-[55px] h-[50px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Rich Resources</h4>
+          <p class="text-[16px] text-white">Access show notes, transcripts, and additional learning materials for every episode.</p>
+        </div>
+      </div>
+
+      <div class="hidden md:grid grid-container">
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl py-[107.5px] px-[40px] row-span-2 ">
+          <img src="./assets/headphone.png" class="w-[50px] h-[50px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Premium Audio Quality</h4>
+          <p class="text-[16px] text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl py-[107.5px] px-[40px] col-span-2 ">
+          <img src="./assets/device.png" class="w-[40px] h-[55px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Mobile Friendly</h4>
+          <p class="text-[16px] text-white">Listen on the go with seamless mobile experience and offline downloads..</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl py-[107.5px] px-[40px] col-span-2 ">
+          <img src="./assets/location.png" class="w-[60px] h-[60px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Global Community</h4>
+          <p class="text-[16px] text-white">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl py-[107.5px] px-[40px] col-span-2">
+          <img src="./assets/zap-fast.png" class="w-[60px] h-[60px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Exclusive Interviews</h4>
+          <p class="text-[16px] text-white">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+        </div>
+        <div class="flex flex-col justify-center bg-[#351165]/40 rounded-xl py-[107.5px] px-[40px]">
+          <img src="./assets/resource.png" class="w-[55px] h-[50px]" alt="">
+          <h4 class="text-[24px] font-bold text-white my-4">Rich Resources</h4>
+          <p class="text-[16px] text-white">Access show notes, transcripts, and additional learning materials for every episode.</p>
         </div>
       </div>
     </section>
