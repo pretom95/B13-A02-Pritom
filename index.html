@@ -55,8 +55,9 @@
 
       <div>
         <button
-          class="hidden md:flex justify-center items-center w-[135px] h-[44px] rounded-4xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"
-        >
+          class="hidden md:flex justify-center items-center w-[135px] h-[44px] rounded-4xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]
+          animate-bounce"
+         >
           <p class="mr-1 text-[16px] font-semibold text-white">Subscribe</p>
           <img src="./assets/ArrowRight.png" alt="" />
         </button>
@@ -84,7 +85,7 @@
             />
 
             <div
-              class="flex justify-center bg-[#00FF88] shadow-xs shadow-[#00FF88] rounded-4xl h-[38px] w-[75px] p-2 absolute top-0 right-[40px]"
+              class="flex justify-center bg-[#00FF88] shadow-xs shadow-[#00FF88] rounded-4xl h-[38px] w-[75px] p-2 absolute top-0 right-[40px] animate-pulse"
             >
               <p class="text-[18px] font-semibold text-[##1A0B2E]">NEW</p>
             </div>
@@ -307,5 +308,32 @@
         </div>
       </div>
     </section>
+
+    <footer class="bg-[url('./assets/footer-bg.png')] bg-cover bg-center flex flex-col justify-center items-center py-10 px-5 md:p-[120px] h-[440px] md:h-[412px] min-w-[248px]">
+        <div class="">
+          <img src="./assets/TechWave.png" alt="">
+        </div>
+        <div class="grid grid-cols-2 md:flex justify-center items-center gap-10 w-[255px] md:w-[544px] my-6 md:my-8">
+          <div class="flex items-center gap-2">
+            <img src="./assets/spotify.png" class="h-6 w-6" alt="">
+            <p class="text-[16px] text-white font-medium">Spotify</p>
+          </div>
+          <div class="flex items-center gap-2 min-w-[152px]">
+            <img src="./assets/apple-podcast.png" class="h-6 w-6 " alt="">
+            <p class="text-[16px] text-white font-medium">Apple Podcast</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/youtube-podcast.png" class="h-6 w-7" alt="">
+            <p class="text-[16px] text-white font-medium">YouTube</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/twitter.png" class="h-6 w-6" alt="">
+            <p class="text-[16px] text-white font-medium">Twitter</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-[16px] text-white">© 2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+    </footer>
   </body>
 </html>
